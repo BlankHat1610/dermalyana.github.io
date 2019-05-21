@@ -1,0 +1,498 @@
+body {
+	background-color: #F5F5F5;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-12.bg-white.box-shadow{
+	box-shadow: 2px 2px 3px rgba(0,0,0,.3), -2px -2px 7px rgba(0,0,0,.2);
+}
+
+ul{
+	padding-left: 5%;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.btn {
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: #FFC400;
+	border-color: #FFC400;
+	color: #fff;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+	background-color: #FFC400 !important;
+	border-color: #FFC400 !important;
+	color: #06A763;
+}
+
+.btn-primary:active, .btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+::selection {
+	background: #fed136;
+	text-shadow: none;
+	color: #fff;
+}
+
+/*Navbar*/
+#mainNav{
+	background-color: #000;
+	color: #fff;
+	width: 100vw;
+	height: auto;
+}
+
+#mainNav .navbar-toggler {
+	font-size: 12px;
+	right: 0;
+	padding: 13px;
+	text-transform: uppercase;
+	color: white;
+	border: 0;
+	background-color: #fed136;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-toggler:focus{
+	outline: none;
+}
+
+#mainNav .navbar-brand {
+	color: #fed136;
+	font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+	font-size: 90%;
+	font-weight: 500;
+	padding: 0.75em 0;
+	letter-spacing: 1px;
+	color: white;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+	color: #fed136;
+}
+
+@media (min-width: 992px) {
+	#mainNav {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		-webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+		transition: padding-top 0.3s, padding-bottom 0.3s;
+		border: none;
+		background-color: rgba(0,0,0,0.2);
+	}
+	#mainNav .navbar-brand {
+		font-size: 1.75em;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	#mainNav .navbar-nav .nav-item .nav-link {
+		padding: 1.1em 1em !important;
+	}
+	#mainNav.navbar-shrink {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: #212529;
+	}
+	#mainNav.navbar-shrink .navbar-brand {
+		font-size: 1.25em;
+		padding: 12px 0;
+	}
+}
+
+header.masthead {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+	background-image: url("D:/Project/CuoiKi/image/intro.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+header.masthead .intro-text {
+	padding-top: 150px;
+	padding-bottom: 100px;
+	z-index: 3;
+	color: #fff;
+	text-shadow: 4px 4px 5px rgba(0,0,0,.8);
+}
+
+header.masthead .blur{
+	background-color: rgba(0,0,0,.15);
+}
+
+header.masthead .intro-text .intro-heading {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 25px;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@media (min-width: 768px) {
+	header.masthead .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+
+	header.masthead .intro-text .intro-heading {
+		font-size: 75px;
+		font-weight: 700;
+		line-height: 75px;
+		margin-bottom: 50px;
+		font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	}
+
+	section#detail .row #product-name h1{
+		font-size: 2.1rem;
+	}
+}
+
+@media (min-width: 425px){
+	section#detail .row #product-name h1{
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 375px){
+	section#detail .row #product-name h1{
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 320px){
+	section#detail .row #product-name h1{
+		font-size: 1.7rem;
+	}
+}
+
+
+/* ---  SECTION  --- */
+
+/*section#f{
+	margin-top: -6rem;
+}
+section#f .row img{
+	width: 100%;
+	box-shadow: 4px 4px 6px rgba(0,0,0,.5), -2px -2px 10px rgba(0,0,0,.5);
+
+}*/
+
+/* --- PRODUCT DETAIL --- */
+
+section#detail{
+	margin-top: 5rem;
+}
+
+section#detail .row{
+	margin-top: 3rem;
+}
+
+section#detail .row img{
+	width: 100%;
+}
+
+section#detail ul{
+	list-style-type: none;
+	margin-top: 1rem !important;
+	padding: 0;
+}
+
+section#detail .row #product-name{
+	margin-top: 3rem;
+}
+
+section#detail .row #product-name h1{
+	padding-left: 1rem;
+	border-left: 5px solid #FFC400;
+}
+
+section#detail .row #product-name p#price{
+	font-size: 2rem;
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: #F5F5F5;
+}
+
+section#detail .row #product-name b{
+	color: #000;
+    border-left: 5px solid #FFC400;
+	padding-left: 1rem;
+}
+
+section#detail .row #product-name .form-group{
+	margin-top: 2rem;
+}
+
+section#detail .row #product-name p#note{
+	margin-top: 2rem;
+	color: #616161;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+section#detail .row #product-name label{
+	color: #616161;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin-left: 0.3rem;
+}
+
+section#detail .row #product-name .form-control{
+	border-radius: 0;
+}
+
+section#detail .row #product-name .form-control:focus{
+	border-color: #FFC400;
+	box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5);
+}
+
+/* --- TITLE --- */
+
+section#desc-review .row #title{
+	margin-top: 2rem;
+}
+
+section#desc-review .row #title p{
+	padding: 0.5rem;
+	margin: 0;
+	border-left: 5px solid #FFC400;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	transition: 0.2s ease-in-out;
+}
+
+section#desc-review .row #title p:active{
+	color: #FFC400;
+}
+
+section#desc-review .row #title p:last-child{
+	margin-top: 1rem;
+}
+
+section#desc-review .row #title p i{
+	color: #fff;
+}
+
+section#desc-review .row #title p:hover{
+	cursor: pointer;
+	color: #FFC400;
+}
+
+section#desc-review .row #title p:hover{
+
+}
+
+/* --- DESCRIPTION --- */
+
+section#desc-review .row #desc{
+	margin-top: 2rem;
+}
+
+section#desc-review .row #desc h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #000;
+	border-left: 5px solid #FFC400;
+	padding-left: 1rem;
+}
+
+section#desc-review .row #desc h6{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #616161;
+	padding-left: calc(1rem + 5px);
+	margin: 1rem 0;
+}
+
+section#desc-review .row #desc ul{
+	list-style-type: none;
+	margin-bottom: 2rem;
+
+}
+
+section#desc-review .row #desc ul li img{
+	width: 1.3rem;
+	margin-right: 0.5rem;
+}
+
+
+/* --- REVIEW --- */
+
+section#desc-review .row #review{
+	margin-top: 2rem;
+}
+
+section#desc-review .row #review h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #000;
+	border-left: 5px solid #FFC400;
+	padding-left: 1rem;
+}
+
+section#desc-review .row #review p#no-review{
+	margin-left: calc(1rem + 5px);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #616161;
+}
+
+section#desc-review .row #review .send-review{
+	margin-left: 5px;
+}
+
+section#desc-review .row #review .send-review p:nth-child(2){
+	margin-bottom: 0;
+}
+
+section#desc-review .row #review .send-review .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+section#desc-review .row #review .send-review .rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.8em;
+  font-size: 1.3rem;
+}
+
+section#desc-review .row #review .send-review .rating > span:hover:before,
+section#desc-review .row #review .send-review .rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+section#desc-review .row #review .send-review form input,
+section#desc-review .row #review .send-review form textarea{
+	border-radius: 0;
+
+}
+
+section#desc-review .row #review .send-review form input:focus,
+section#desc-review .row #review .send-review form textarea:focus{
+	box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5);
+	border-color: #FFC400;
+}
+
+section#desc-review .row #review .send-review button[type="submit"]{
+	margin: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+section#related .row img{
+	margin-top: 3rem;
+}
+
+section#related .title h3{
+	color: #616161;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+	
+	section#detail{
+		margin-top: 1rem;
+		background-color: #F2F2F2;
+	}
+
+	section#detail .row{
+		margin-top: 3rem;
+	}
+}
+
+/*  ---  FOOTER  ---  */
+
+footer{
+	margin-top: 4rem;
+	background-color: #000;
+	color: #A5A5AA;
+}
+
+footer h2{
+	color: #fff;
+}
+
+footer .row{
+	margin-top: 0;
+	padding-top: 2rem;
+}
+
+footer .row a.btn{
+	background-color: transparent;
+	border-color: #fff;
+	margin-bottom: 2rem;
+}
+
+footer div#dermalyana ul{
+	list-style-type: none;
+}
+
+footer div#dermalyana ul li{
+	padding: 0.5rem 0;
+}
+
+footer div#dermalyana ul li a{
+	color: #A5A5AA;
+	transition: .2s ease-in-out;
+}
+
+footer div#dermalyana ul li a:hover{
+	margin-left: 0.2rem;
+	color: #fed136;
+}
+
+footer div ul#img-bottom{
+	list-style-type: none;
+	display: flex;
+}
+
+footer div ul#img-bottom li{
+	margin: 0.5rem;
+}
+
+footer div ul#img-bottom li img{
+	width: 6rem;
+}
+
+footer div ul#img-bottom li a{
+	color: #4267B2;
+}
+
+@media screen(max-width: 1000){
+	footer #copyright-logo > div{
+		text-align: center;
+	}
+	footer #copyright-logo #img-bottom{
+		justify-content: center;
+		float: none;
+	}
+}

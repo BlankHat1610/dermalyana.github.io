@@ -1,0 +1,472 @@
+body {
+	background-color: #F5F5F5;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-12.bg-white.box-shadow{
+	box-shadow: 2px 2px 3px rgba(0,0,0,.3), -2px -2px 7px rgba(0,0,0,.2);
+}
+
+ul{
+	padding-left: 5%;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.btn {
+	font-family: 'Muli', sans-serif;
+	text-transform: capitalize;
+	font-weight: 600;
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: #FFC400;
+	border-color: #FFC400;
+	color: #fff;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+	background-color: #FFC400 !important;
+	border-color: #FFC400 !important;
+	color: #06A763;
+}
+
+.btn-primary:active, .btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+::selection {
+	background: #FFC400;
+	text-shadow: none;
+	color: #fff;
+}
+
+/*Navbar*/
+#mainNav{
+	background-color: #000;
+	color: #fff;
+	width: 100vw;
+	height: auto;
+}
+
+#mainNav .navbar-toggler {
+	font-size: 12px;
+	right: 0;
+	padding: 13px;
+	text-transform: uppercase;
+	color: white;
+	border: 0;
+	background-color: #FFC400;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-toggler:focus{
+	outline: none;
+}
+
+#mainNav .navbar-brand {
+	color: #FFC400;
+	font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+	font-size: 90%;
+	font-weight: 500;
+	padding: 0.75em 0;
+	letter-spacing: 1px;
+	color: white;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+	color: #FFC400;
+}
+
+@media (min-width: 992px) {
+	#mainNav {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		-webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+		transition: padding-top 0.3s, padding-bottom 0.3s;
+		border: none;
+		background-color: rgba(0,0,0,0.2);
+	}
+	#mainNav .navbar-brand {
+		font-size: 1.75em;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	#mainNav .navbar-nav .nav-item .nav-link {
+		padding: 1.1em 1em !important;
+	}
+	#mainNav.navbar-shrink {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: #212529;
+	}
+	#mainNav.navbar-shrink .navbar-brand {
+		font-size: 1.25em;
+		padding: 12px 0;
+	}
+}
+
+header.masthead {
+	position: relative;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+	background-image: url("../image/intro.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+header.masthead .blur{
+	background-color: rgba(0,0,0,.15);
+}
+
+header.masthead .intro-text {
+	padding-top: 150px;
+	padding-bottom: 100px;
+	z-index: 3;
+	color: #fff;
+	text-shadow: 4px 4px 5px rgba(0,0,0,.8);
+}
+
+header.masthead .intro-text .intro-lead-in {
+	font-size: 22px;
+	font-style: italic;
+	line-height: 22px;
+	margin-bottom: 25px;
+	font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.masthead .intro-text .intro-heading {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 50px;
+	margin-bottom: 25px;
+	font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.masthead .intro-text a{
+	padding: 1rem 2rem;
+	text-shadow: none;
+}
+
+@media (min-width: 768px) {
+	header.masthead .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+	header.masthead .intro-text .intro-lead-in {
+		font-size: 40px;
+		font-style: italic;
+		line-height: 40px;
+		margin-bottom: 25px;
+		font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	}
+	header.masthead .intro-text .intro-heading {
+		font-size: 75px;
+		font-weight: 700;
+		line-height: 75px;
+		margin-bottom: 50px;
+		font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	}
+}
+
+/*section*/
+/*combo dermalyana*/
+section h1{
+	color: #616161;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 0.2rem;
+}
+
+section div#combo h1{
+	margin-top: 6rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+section div#combo .box-shadow .row #img-combo img{
+	margin: 3rem 0;
+}
+
+section ul li{
+	list-style-type: none;
+	line-height: 2rem;
+}
+
+section ul li a{
+	color: #FFC400;
+}
+
+section ul li a:hover{
+	color: #FFC400;
+}
+
+section div#combo ul li img{
+	width: 1.3rem;
+	margin-right: 0.5rem;
+}
+
+section div#combo p{
+	color: #616161;
+	line-height: 1.5rem;
+	text-shadow: 0 0 20px rgba(175, 169, 188, 0.38);
+	margin-top: 3rem;
+}
+
+section div#combo img{
+	width: 100%;
+}
+
+/*why*/
+section div#why h1{
+	line-height: 3rem;
+	text-transform: uppercase;
+}
+section div#why .row p{
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+	padding: 0 1rem;
+	color: #616161;
+}
+
+section div#why .row a{
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/*3 products*/
+section div#product-3 .card{
+	border: none;
+}
+/*section div#product-3 .card:hover{
+	background-color: rgba(193,229,144, 0.9);
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	}*/
+
+	section div#product-3 .card img{
+		height: 22rem;
+	}
+
+	section div#product-3 .card img{
+		margin-top: 2rem;
+	}
+
+	section div#product-3 .card .card-title{
+		color: #616161;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	section div#product-3 .card a.btn{
+		margin-bottom: 1.5rem;
+	}
+
+	/*blog*/
+
+
+	section div#blog h1{
+		font-family: inherit;
+		padding-top: 5rem;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		line-height: 0.2rem;
+		margin-bottom: 1.7rem;
+	}
+
+	section div#blog iframe:nth-child(1){
+		margin-top: 3rem;
+	}
+
+	section div#blog iframe{
+		height: 12rem;
+	}
+
+	section div#blog iframe:last-child{
+		margin-bottom: 0;
+	}
+	section div#blog a{
+		width: 100%;
+		text-align: left;
+		margin-bottom: 1.5rem;
+	}
+
+	@media (max-width: 1024px){
+
+		section div#product-3 .card img{
+			height: 20rem;
+		}
+
+		section div#blog iframe{
+			height: 10rem;
+		}
+	}
+
+	@media (max-width: 768px){
+
+		section div#combo .box-shadow .row #img-combo img{
+			margin-bottom: 0;
+		}
+
+		section div#combo .row{
+			text-align: center;
+		}
+		
+		section div#combo .row .card-body{
+			padding: 0;
+		}
+
+		section div#combo .row a.btn{
+			margin-bottom: 0.5rem;
+			padding: 0.3rem 1rem;
+		}
+
+		section div#product-3 .card img{
+			height: 14rem;
+		}
+
+		section div#blog iframe{
+			height: 7.5rem;
+		}
+	}
+	
+	@media (max-width: 425px){
+
+		section div#product-3 .card img{
+			height: 23rem;
+		}
+
+		section div#blog iframe{
+			height: 14rem;
+		}
+	}
+
+	@media (max-width: 375px){
+
+		section div#product-3 .card img{
+			height: 20rem;
+		}
+		section div#blog iframe{
+			height: 12rem;
+		}
+	}
+
+	@media (max-width: 320px){
+
+		section div#product-3 .card img{
+			height: 18rem;
+		}
+		section div#blog iframe{
+			height: 10rem;
+		}
+	}
+
+/*section div#blog a:hover{
+	left: 0;
+	}*/
+
+	/*carousel founder*/
+/*section #founder{
+	height: 100vh;
+	}*/
+/*section #founder div.carousel-inner img[alt="lien rogers"]{
+	width: 100%;
+}
+*/
+/*distributors*/
+
+section div#distributor h1{
+	margin-top: 6rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+.owl-prev {
+	left: -20px;
+}
+
+.owl-next {
+	right: -20px;
+}
+.owl-prev, .owl-next{
+	position: absolute;
+	top: 30%;
+}
+.owl-prev span, .owl-next span{
+	font-size: 40px;
+	color: #787878;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+	background-color: transparent;
+}
+
+/*footer*/
+
+
+footer{
+	margin-top: 5rem;
+	background-color: #000;
+	color: #A5A5AA;
+}
+footer h2{
+	color: #fff;
+}
+footer .row{
+	margin-top: 0;
+	padding-top: 2rem;
+}
+footer .row a.btn{
+	background-color: transparent;
+	border-color: #fff;
+	margin-bottom: 2rem;
+}
+footer div#dermalyana ul{
+	list-style-type: none;
+}
+footer div#dermalyana ul li{
+	padding: 0.5rem 0;
+}
+footer div#dermalyana ul li a{
+	color: #A5A5AA;
+	transition: .2s ease-in-out;
+}
+footer div#dermalyana ul li a:hover{
+	margin-left: 0.2rem;
+	color: #FFC400;
+}
+footer div ul#img-bottom{
+	list-style-type: none;
+	display: flex;
+}
+footer div ul#img-bottom li{
+	margin: 0.5rem;
+}
+footer div ul#img-bottom li img{
+	width: 6rem;
+}
+footer div ul#img-bottom li a{
+	color: #4267B2;
+}
+@media screen(max-width: 1000){
+	footer #copyright-logo > div{
+		text-align: center;
+	}
+	footer #copyright-logo #img-bottom{
+		justify-content: center;
+		float: none;
+	}
+}

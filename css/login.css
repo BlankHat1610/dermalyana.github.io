@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url("../image/intro.jpg");
+	background-size: cover;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-text-fill-color: #fff;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.sign-in{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+.sign-in h2{
+	margin: 0;
+	padding: 0;
+	color: #fed136;
+}
+
+.sign-in .input{
+	position: relative;
+}
+
+.sign-in .input input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1rem;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.sign-in .input label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 1rem;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.sign-in .input input:valid ~ label,
+.sign-in .input input:focus ~ label{
+	top: -20px;
+	left: 0;
+	color: #fec810;
+	font-size: 12px;
+}
+
+.sign-in input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #fec810;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.sign-in #bottom{
+	width: 100%;
+}
+
+.sign-in a{
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.sign-in a#create{
+	float: left;
+	text-align: left;
+}
+
+.sign-in a#forget{
+	float: left;
+	text-align: right
+}
+
+.sign-in a:hover {
+    color: #fec810;
+}
+
+.hide{
+	display: none;
+}
+
+/*sign-up*/
+.sign-up{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+.sign-up h2{
+	margin: 0;
+	padding: 0;
+	color: #fed136;
+}
+
+.sign-up .input{
+	position: relative;
+}
+
+.sign-up .input input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1rem;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.sign-up .input label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 1rem;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.sign-up .input input:valid ~ label,
+.sign-up .input input:focus ~ label{
+	top: -20px;
+	left: 0;
+	color: #fed136;
+	font-size: 12px;
+}
+
+.sign-up a{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.sign-up a:hover{
+	color: #fed136;
+}
+
+.sign-up input[type="submit"]{
+	float: right;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #fed136;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+@media screen (max-width: 420){
+	body{
+		background-image: none;
+		background: rgba(0,0,0,.8);
+	}
+}
